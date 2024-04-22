@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav1
+{
+    background-color: #BA3B0A;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    position: sticky;
+    top: 0;
+}
+#nav1 a
+{
+ text-decoration: none;
+ color: white;
+}
+#nav2
+{
+  background-color: #BA3B0A;
+  border: 1px solid black;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+#nav2 ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav2 li
+{
+  list-style: none;
+  margin-right: 10px;
+  margin-left: 120px;
+}
+#nav2 a
+{
+  text-decoration: none;
+  color: white;
+}
+#nav2 li:hover
+{
+  border-bottom: 1px solid white;
+}
+#carousel
+{
+  display: flex;
+  width: 200%;
+  animation: slideshow 20s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes slideshow{
+  0%{ transform: translateX(0%);}
+  33.33%{ transform: translateX(-50%);}
+  66.66%{ transform: translateX(0%);}
+  100%{ transform: translateX(-50%); }
+}
+.contenta 
+{
+  background: url('./assets/food1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+}
+#txta
+{
+  position: relative;
+  top: 200px;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+}
+#booka
+{
+  border: 1px solid black;
+  color: black;
+  background-color:white;
+  padding: 20px;
+  font-size: large;
+  position: relative;
+  top: 250px;
+  border-radius: 5px;
+}
+#booka:hover
+{
+  background-color: lightskyblue;
+}
+.contentb
+{
+  background: url('./assets/food2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+}
+#welcome
+{
+  font-size: 16px;
+  color:  rgb(211, 169, 113);
+  font-weight: 400;
+  line-height: 16px;
+}
+#name
+{
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 44.4px;
+  color:rgb(40,40,40);
+}
+#para1
+{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgb(155,155,155);
+}
+.contentc
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+#apara
+{
+  width:500px;
+  text-align: center;
+}
+#seat
+{
+  margin-left: 200px;
+}
+.contentd
+{
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  background: url('./assets/food3.jpg') no-repeat;
+  background-size: cover;
+}
+#para2
+{
+  color: #ffffff;
+  font-size: 50px;
+  padding-top: 90px ;
+}
+
+@media screen and (min-width:300px) and (max-width:325px)
+{
+  #nav1
+  {
+    font-size: 0.4rem;
+  }
+  #nav2 ul
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 250px;
+  }
+  #menu
+  {
+    margin-top: 25px;
+  }
+  .contenta
+  {
+    height: 65vh;
+  }
+  .contentb
+  {
+    height: 65vh;
+  }
+  #txta
+  {
+    font-size: 18px;
+    top: 120px;
+  }
+  #booka
+  {
+    top: 150px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+  }
+  #apara
+ {
+  width:150px;
+  text-align: center;
+ }
+ .contentc
+ {
+  flex-wrap: wrap;
+ }
+ #para1
+ {
+  font-size: 12px;
+  line-height: 15px;
+ }
+ #seat
+ {
+  margin-top: 50px;
+  margin-right: 180px;
+  height: 200px;
+  width: 200px;
+ }
+ .contentd
+ {
+  height: 200px;
+ }
+ #para2
+{
+  font-size: 30px;
+  padding-top: 50px ;
+}
+}
+@media screen and (min-width:330px) and (max-width:365px){
+  #nav1
+  {
+    font-size: 0.4rem;
+  }
+  #nav2 ul
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 250px;
+  }
+  #menu
+  {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .contenta
+  {
+    height: 65vh;
+  }
+  .contentb
+  {
+    height: 65vh;
+  }
+  #txta
+  {
+    font-size: 20px;
+    top: 170px;
+  }
+  #booka
+  {
+    top: 200px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+  }
+  #apara
+ {
+  width:150px;
+  text-align: center;
+ }
+ .contentc
+ {
+  flex-wrap: wrap;
+ }
+ #seat
+ {
+  margin-top: 50px;
+  margin-right: 190px;
+  height: 250px;
+  width: 250px;
+ }
+ #para1
+ {
+  font-size: 15px;
+  line-height: 10px;
+ }
+ .contentd
+ {
+  height: 200px;
+ }
+ #para2
+{
+  font-size: 30px;
+  padding-top: 50px ;
+}
+}
+@media screen and (min-width:370px) and (max-width:399px)
+{
+  #nav1
+  {
+    font-size: 0.4rem;
+  }
+  #nav2 ul
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 250px;
+  }
+  #menu
+  {
+    margin-top: 25px;
+    margin-left: 60px;
+  }  
+  .contenta
+  {
+    height: 70vh;
+  }
+  .contentb
+  {
+    height: 70vh;
+  }
+  #txta
+  {
+    font-size: 22px;
+    top: 190px;
+  }
+  #booka
+  {
+    top: 220px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+  }
+  #apara
+  {
+   width:150px;
+   text-align: center;
+  }
+  .contentc
+  {
+   flex-wrap: wrap;
+  }
+  #seat
+  {
+   margin-top: 50px;
+   margin-right: 190px;
+   height: 250px;
+   width: 250px;
+  }
+  #para1
+  {
+   font-size: 16px;
+   line-height: 10px;
+  }
+  .contentd
+ {
+  height: 200px;
+ }
+ #para2
+{
+  font-size: 35px;
+  padding-top: 50px ;
+}
+}
+@media screen and (min-width:399px) and (max-width:440px)
+{
+  #nav1
+  {
+    font-size: 0.4rem;
+  }
+  #nav2 ul
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 260px;
+  }
+  #menu
+  {
+    margin-top: 25px;
+    margin-left: 80px;
+  }  
+  .contenta
+  {
+    height: 75vh;
+  }
+  .contentb
+  {
+    height: 75vh;
+  }
+  #txta
+  {
+    font-size: 24px;
+    top: 190px;
+  }
+  #booka
+  {
+    top: 220px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+  }
+  #apara
+  {
+   width:150px;
+   text-align: center;
+  }
+  .contentc
+  {
+   flex-wrap: wrap;
+  }
+  #seat
+  {
+   margin-top: 50px;
+   margin-right: 190px;
+   height: 270px;
+   width: 270px;
+  }
+  #para1
+  {
+   font-size: 16px;
+  }
+  .contentd
+  {
+   height: 200px;
+  }
+  #para2
+ {
+   font-size: 35px;
+   padding-top: 50px ;
+ }
+}
+@media screen and (min-width:550px) and (max-width:770px)
+{
+  #nav1
+  {
+    font-size: 0.6rem;
+  }
+  #menu
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 250px;
+  }
+  #nav2 li 
+  {
+     margin-right: 10px;
+     margin-left: 10px;
+  }
+  .contenta
+  {
+    height: 75vh;
+  }
+  .contentb
+  {
+    height: 75vh;
+  }
+  #txta
+  {
+    font-size: 40px;
+    top: 240px;
+  }
+  #booka
+  {
+    top: 250px;
+  }
+  #apara
+  {
+    margin-left:50px;
+  }
+  #seat
+  {
+    margin-right:10px;
+    margin-left:20px;
+    height: 300px;
+    width: 300px;
+  }
+  #para2
+  {
+    font-size: 43px;
+  }
+}
+@media screen and (min-width:775px) and (max-width:835px)
+{
+  #nav1
+  {
+    font-size: 0.6rem;
+  }
+  #menu
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 250px;
+  }
+  #nav2 li 
+  {
+     margin-right: 10px;
+     margin-left: 20px;
+  }
+  .contenta
+  {
+    height: 75vh;
+  }
+  .contentb
+  {
+    height: 75vh;
+  }
+  #txta
+  {
+    font-size: 45px;
+    top: 275px;
+  }
+  #booka
+  {
+    top: 300px;
+  }
+  #apara
+  {
+    margin-left:50px;
+    margin-top: 20px;
+  }
+  #seat
+  {
+    margin-right:10px;
+    margin-top: 20px;
+    margin-left:20px;
+    height: 300px;
+    width: 300px;
+  }
+  #para2
+  {
+    font-size: 43px;
+  }
+}
+@media screen and (min-width:850px) and (max-width:900px)
+{
+  #nav1
+  {
+    font-size: 0.7rem;
+  }
+  #menu
+  {
+    display: none;
+  }
+  #logo
+  {
+    width: 250px;
+  }
+  #nav2 li 
+  {
+     margin-right: 10px;
+     margin-left: 30px;
+  }
+  #apara
+  {
+    margin-left:50px;
+    margin-top: 20px;
+  }
+  #seat
+  {
+    margin-right:10px;
+    margin-top: 20px;
+    margin-left:20px;
+    height: 300px;
+    width: 300px;
+  }
+  #para2
+  {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width:1000px) and (max-width:1290px)
+{
+  #nav1
+  {
+    font-size: 0.7rem;
+  }
+  #menu
+  {
+    display: none;
+  }
+  #nav2 li
+  {
+    margin-right: 20px;
+    margin-left: 70px;
+  }
+  #apara
+  {
+    margin-left:50px;
+    margin-top: 20px;
+  }
+  #seat
+  {
+    margin-right:10px;
+    margin-top: 20px;
+    margin-left:50px;
+    height: 400px;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1300px)
+{
+  #menu
+  {
+    display: none;
+  }
+  #seat
+  {
+    height: 400px;
+    width: 500px;
+  }
+}
